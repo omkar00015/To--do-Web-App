@@ -1,0 +1,60 @@
+.icons {
+
+   color: black;
+   font-size: 5.25rem;
+}
+
+.icons center {
+
+    font-size: 1.2rem;
+}
+
+.devName h2 {
+
+    margin-left: 0px;
+    margin-top: 2rem;
+    font-size: 2rem;
+    /* margin-left: 2rem; */
+}
+
+.devName p {
+
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    margin-left: 1rem;
+}
+
+.socialHead {
+
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-size: 2rem;
+}
+
+.devName {
+
+    margin-left: 2rem;
+}
+
+
+.socialMedia {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    column-gap: 20% 20%;
+}
+
+.socialMedia p {
+
+    font-size: 1rem;
+    word-wrap: break-word;
+}
+
+.socialMedia .medias {
+
+    width: 10rem;
+    margin: 0.4rem;
+}

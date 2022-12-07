@@ -1,0 +1,253 @@
+* {
+
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+
+    font-family: snas-serif;
+}
+
+nav {
+
+    background-color: #222;
+    padding: 0 15px;
+}
+
+html {
+
+    font-size: 90%;
+}
+
+a {
+
+    text-decoration: none;
+    color: white;
+}
+
+.menu {
+
+    list-style-type: none;
+    padding: 10px;
+}
+
+.logo {
+
+    font-size: 2rem;
+    padding: 7.5px 10px 7.5px 0px;
+}
+
+.userName {
+
+    color: white;
+    margin-right: auto;
+}
+
+.item {
+
+    padding: 1rem;
+}
+
+.item:not(.button) a:hover,
+.item a:hover::after {
+
+    color: #ccc;
+}
+
+.item:not(.button) a:hover {
+
+    background-color: gray;
+}
+
+.menu {
+
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu li a {
+
+    font-size: 1.2rem;
+    display: block;
+    padding: 10px 10px;
+}
+
+.menu .logo a {
+
+    font-size: 1.8rem;
+}
+
+.toggle {
+
+    order: 1;
+    font-size: 1.5rem;
+}
+
+.item.button {
+
+    order: 2;
+}
+
+.item {
+
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.active .item {
+
+    display: block;
+}
+
+.logOut {
+
+    color: white;
+    background-color: #DC3545;
+    border-color: #dc3545;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+input#outlined {
+
+    color: white;
+    margin-bottom: 2px;
+}
+
+#outlined-label {
+
+    color: lightblue;
+}
+
+input > label {
+
+    color: white;
+}
+
+input#outlined:focus {
+
+    border: none;
+}
+
+@media (max-width: 699px) {
+
+    html {
+
+        font-size: 80%;
+    }
+
+    .item.button {
+
+        border-bottom: 1px #444 solid;
+    }
+
+    .item .googleButton {
+
+        width: 10rem !important;
+        font-size: 0.7rem !important;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 959px) {
+
+    html {
+        font-size: 85%;
+    }
+    
+    .menu {
+
+        justify-content: center;
+    }
+
+    .logo {
+
+        flex: 1;
+    }
+
+    .userName {
+
+        margin-right: 1rem;
+    }
+
+    .item.button {
+
+        width: auto;
+        order: 1;
+        display: block;
+    } 
+    
+    .toggle {
+
+        flex: 1;
+        order: 2;
+        text-align: right;
+    }    
+
+    .button div {
+
+        width: auto !important;
+        font-size: small !important;
+    }
+
+    .button span {
+
+        padding: 0px 2px;
+    }
+
+    .button:hover {
+
+        text-decoration: none;
+    }
+}
+
+@media all and (min-width: 960px) {
+
+    html {
+        font-size: 90%;
+    }
+
+    .userName {
+
+        color: white;
+        margin-right: auto;
+    }
+
+    .button div {
+
+        width: auto !important;
+        font-size: small !important;
+    }
+
+    .button span {
+
+        padding: 0px 2px;
+    }
+    
+    .item {
+
+        order: 1;
+        display: block;
+        width: auto;
+    }
+
+    .button {
+
+        order: 2;
+    }
+
+    .toggle {
+
+        display: none;
+    }
+}

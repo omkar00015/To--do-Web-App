@@ -1,0 +1,143 @@
+.mainContent {
+
+    position: relative;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.lab {
+
+    margin-top: 2rem;
+    display: block;
+}
+
+.addTodo {
+
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-right: 5rem;
+    border-right: 1px solid grey;
+}
+
+#title, #description {
+    
+    display: block;
+    width: 100%;
+    margin-top: 1rem;    
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    background-clip: padding-box;
+}
+
+#description {
+
+    line-height: 5;
+}
+
+.addButton {
+
+    margin-top: 1.5rem;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.875rem;
+    border-radius: 0.2rem;
+    color: #fff;
+    background-color: #198754;
+    border-color: #198754;
+    cursor:pointer;
+}
+
+
+/* Show Todo */
+
+.showTodo {
+    
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-top: 2rem;
+}
+
+.deleteTodo {
+
+    color: white;
+    background-color: #DC3545;
+    border-color: #dc3545;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.displayTodos {
+
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.timeDate {
+
+    font-weight: 10;
+    color: gray;
+}
+
+p {
+
+    display: block;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.addTodo .inp h2 {
+
+    margin-top: 2rem;
+}
+
+.displayTodos h4 {
+    
+    display: block;
+    font-size: calc(1.275rem + .3vw);
+    margin-block-start: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+@media (max-width: 700px) {
+
+    .mainContent {
+        
+        grid-template-columns: 100%;
+        grid-template-rows: 30rem;
+    }
+
+    .addTodo {
+
+        padding-right: 0;
+        border: none;
+        border-bottom: 1px solid grey;        
+    }
+
+    .addButton {
+
+        cursor:auto;
+    }
+
+    .deleteTodo {
+
+        cursor:auto;
+    }
+}
+
+

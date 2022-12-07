@@ -1,0 +1,24 @@
+.feedBack {
+
+    color: black;
+    font-size: 1.5rem;
+}
+
+.feedBack p {
+    
+    color: black;
+    margin: 2rem;
+    font-size: 1.4rem;
+}
+
+.feedBack p a {
+
+    color: blue;
+    text-decoration: underline;
+}
+
+.feedBack h2 {
+
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
